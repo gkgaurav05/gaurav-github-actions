@@ -1,0 +1,11 @@
+name: Shell command
+
+on: push
+
+jobs: 
+  run-shell-command: 
+      runs-on: self-hosted
+      steps:
+        - run: echo "Hello world"
+        - run: echo "$HOSTNAME"
+        
