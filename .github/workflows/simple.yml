@@ -10,3 +10,4 @@ jobs:
               echo "Hello world"
               echo "$HOSTNAME"
         
+        - run: echo "$GIT_REF" 
