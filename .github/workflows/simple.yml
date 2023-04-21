@@ -11,4 +11,7 @@ jobs:
               echo "$HOSTNAME"
               echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}
         
-        - run: echo "$GIT_REF" 
+        - run: |
+              echo "$GIT_REF"
+              echo "Tesing tags creation"
+ 
