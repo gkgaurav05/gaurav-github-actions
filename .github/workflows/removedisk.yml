@@ -11,14 +11,14 @@ jobs:
           echo "Free space:"
           df -h
           
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
+      - name: Free Up GitHub Actions Ubuntu Runner Disk Space 🔧
+        uses: jlumbroso/free-disk-space@main
         with:
-          root-reserve-mb: 512
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
-      - name: Checkout
-        uses: actions/checkout@v3
+          android: false
+          dotnet: false
+          haskell: true
+          large-packages: true
+          swap-storage: true
 
       - name: Build
         run: |
